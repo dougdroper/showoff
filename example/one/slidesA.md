@@ -1,34 +1,42 @@
 <!SLIDE title-slide>
 .notes first slide
 
-# First Slide #
+# Introduction #
 
 <!SLIDE bullets incremental transition=fade>
 .notes something something something something something something something something something something something something something something something dark side
 
-# Second Slide #
+# Quick runthrough #
 
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
+* request comes into notonthehighstreet.com controller
+* controller figures out what it needs
+* it looks in the database for the content
+* we then pass that to the view
+ 
+!SLIDE commandline incremental
 
-<!SLIDE bullets>
-# Third Slide
+	$ www.notonthehighstreet.com/customer-faqs
 
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
+!SLIDE smaller
+	
+	@@@ ruby	
+	def customer_faqs
+      @page = Page.find_by_handle!('customer-faqs')
+	end
 
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
 
-!SLIDE center transition=scrollUp
+!SLIDE full-page transition=scrollUp
 .notes another dark side
 
-![octocat](octocat.png)
+![octocat](database.png)
+
+!SLIDE full-page transition=scrollUp
+.notes another dark side
+
+![octocat](view_contact.png)
+
+!SLIDE full-page transition=scrollUp
+.notes another dark side
+
+![octocat](show_view.png)
+
