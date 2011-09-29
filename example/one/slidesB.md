@@ -1,13 +1,10 @@
-#So how can we edit that?#
+!SLIDE
+#Let's look at editing#
 
-!SLIDE commandline incremental
+!SLIDE center full-page
+.notes show page in browser
 
-	$ https://noths.notonthehighstreet.com/admin/
-
-!SLIDE full-page transition=scrollUp
-.notes another dark side
-
-![octocat](cms_pages.png)
+![octocat](home_page_buttons.png)
 
 <!SLIDE bullets incremental transition=fade>
 # Programs you can use: #
@@ -15,10 +12,10 @@
 * notepad++ (http://notepad-plus-plus.org/download/v5.9.3.html)
 * sublime text 2 (http://www.sublimetext.com/2)
 
-!SLIDE full-page transition=scrollUp
+!SLIDE center full-page
+.notes show page in browser
 
-![octocat](show_edit.png)
-
+![octocat](home_buttons_view.png)
 
 !SLIDE smaller
 
@@ -63,9 +60,31 @@
 	<hr />
 
 
-!SLIDE full-page transition=scrollUp
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](home_buttons_view.png)
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](document.png)
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](home_buttons_view.png)
+
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](home_page_buttons.png)
+
+
+!SLIDE full-page center transition=scrollUp
 .notes another dark side
 
 ![octocat](home_page_broken.png)
-
 

@@ -1,56 +1,58 @@
 <!SLIDE title-slide>
 .notes run through what im going to talk about
 
-# Introduction #
+# Pages #
 
 
-!SLIDE full-page transition=scrollUp
+!SLIDE center full-page
 .notes show page in browser
 
 ![octocat](home_page.png)
 
 
-!SLIDE full-page transition=scrollUp
+!SLIDE center full-page
 .notes show page in browser
 
 ![octocat](home_page_editable.png)
 
+!SLIDE center full-page
+.notes show page in browser
 
-<!SLIDE bullets incremental transition=fade>
+![octocat](home_page_buttons.png)
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](home_page.png)
+
+!SLIDE full-page center
+.notes controller like air traffic controller
 
 
 # Quick runthrough #
 
-* request comes into notonthehighstreet.com controller
-* controller figures out what it needs
-* it looks in the database for the content
-* we then pass that to the view
-
-!SLIDE commandline incremental
-
-	$ www.notonthehighstreet.com/customer-faqs
+![octocat](mvc.png)
 
 !SLIDE smaller
-.notes controller
-
+.notes controller like air traffic controller
+# Controller #
 	@@@ ruby
-	def customer_faqs
-      @page = Page.find_by_handle!('customer-faqs')
+	def home_page
+      @home_page_buttons = Database.find 'home_page_buttons'
 	end
 
-
-!SLIDE full-page transition=scrollUp
-.notes database of pages
-
-![octocat](database.png)
-
-!SLIDE full-page transition=scrollUp
-.notes show page in sublime
-
-![octocat](view_contact.png)
-
-!SLIDE full-page transition=scrollUp
+!SLIDE center full-page
 .notes show page in browser
 
-![octocat](show_view.png)
+![octocat](buttons_database.png)
 
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](before.png)
+
+!SLIDE center full-page
+.notes show page in browser
+
+![octocat](home_buttons_view.png)
